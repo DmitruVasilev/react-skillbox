@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import { Header } from './components/Header';
+import {App} from "./App";
 
 window.addEventListener('load', () => {
-    ReactDom.render(<Header />, document.getElementById('root'));
+    ReactDom.render(<App />, document.getElementById('root'));
 })

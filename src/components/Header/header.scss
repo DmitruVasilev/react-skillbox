@@ -1,0 +1,14 @@
+@import "src/styles/constants.global";
+
+.header {
+  @include for-phone{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 40px;
+  }
+
+  @include for-tablet{
+    padding: 67px 0;
+  }
+}
