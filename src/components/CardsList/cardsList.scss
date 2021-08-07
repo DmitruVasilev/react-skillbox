@@ -1,0 +1,8 @@
+@import "src/styles/constants.global";
+
+.cardsList {
+  @include for-tablet{
+    padding: 40px 0;
+  }
+}
+

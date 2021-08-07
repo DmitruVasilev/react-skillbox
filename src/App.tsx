@@ -1,15 +1,18 @@
 import React from 'react';
-import { Layout } from './components/Layout/Layout';
+import { Layout } from './components/Layout';
 import { Header } from './components/Header';
+import { Content } from './components/Content';
+import { CardsList } from './components/CardsList';
 
 import './styles/main.global.scss';
 
 export function App(): JSX.Element{
   return (
-    <main>
-      <Layout>
-        <Header />
-      </Layout>
-    </main>
+    <Layout>
+      <Header />
+      <Content>
+        <CardsList></CardsList>
+      </Content>
+    </Layout>
   );
 }

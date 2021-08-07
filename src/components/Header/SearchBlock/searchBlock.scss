@@ -11,7 +11,7 @@
     box-shadow: 0 0 20 $boxShadowBlack;
     margin: 0 0 30px;
 
-    @include for-phone {
+    @include for-tablet {
         padding: 0;
         margin: 0 0 0 auto;
         background-color: transparent;

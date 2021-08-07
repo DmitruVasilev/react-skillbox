@@ -16,13 +16,13 @@ $boxShadowBlack: rgba(0, 0, 0, 0.1);
 $content-desktop-width: 1540px;
 $content-tablet-width: 1024px;
 
-@mixin for-tablet {
+@mixin for-desktop {
   @media all and (min-width: $content-desktop-width) {
     @content;
   }
 }
 
-@mixin for-phone {
+@mixin for-tablet {
   @media all and (min-width: $content-tablet-width) {
     @content;
   }
