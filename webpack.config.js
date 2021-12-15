@@ -27,7 +27,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.[tj]sx?$/,
+        test: /\.[tj]s?(x)$/,
         use: ['ts-loader']
       },
       {
