@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './layout.scss';
+import styles from './layout.css';
 
 interface ILayout {
   children?: React.ReactNode
@@ -7,7 +7,7 @@ interface ILayout {
 
 export function Layout({children}: ILayout): JSX.Element {
   return (
-    <section className={styles.p_class}>
+    <section className={styles.layout}>
       {children}
     </section>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './searchBlock.scss';
+import styles from './searchBlock.css';
 
 export function SearchBlock(): JSX.Element {
   return (

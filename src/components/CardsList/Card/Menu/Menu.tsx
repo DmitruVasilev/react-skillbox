@@ -2,7 +2,7 @@ import React from 'react';
 
 import { MenuIcon } from '../../../../icons';
 
-import styles from './menu.scss';
+import styles from './menu.css';
 
 export function Menu(): JSX.Element {
   return (

@@ -1,27 +1,16 @@
-@import "src/styles/constants.global";
-
 .textContent{
   padding: 14px 20px;
-  @include for-tablet{
-    order: 2;
-  }
-  @include for-desktop {
-    flex-basis: 672px;
-  }
 }
 
 .createdAt{
-  color: $gray99;
+  color: var(--gray99);
   font-size: 10px;
 }
 
 .createdAtLabel{
   display: none;
-  color: $gray99;
+  color: var(--gray99);
   font-size: 10px;
-  @include for-tablet{
-    display: inline;
-  }
 }
 
 .metaData{
@@ -34,11 +23,6 @@
   display: flex;
   align-items: center;
   margin-right: 10px;
-  @include for-desktop{
-    &:hover a {
-      text-decoration: underline;
-    }
-  }
 }
 
 .avatar{
@@ -49,7 +33,7 @@
 }
 
 .username{
-  color: $orange;
+  color: var(--orange);
   font-size: 12px;
 }
 
@@ -66,4 +50,24 @@
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   display: -webkit-box;
+}
+
+@media all and (min-width: 1024px) {
+  .textContent{
+    order: 2;
+  }
+  
+  .createdAtLabel {
+    display: inline;
+  }
+  
+  .userLink:hover a{
+    text-decoration: underline;
+  }
+}
+
+@media all and (min-width: 1540px) {
+  .textContent{
+    flex-basis: 672px;
+  }
 }

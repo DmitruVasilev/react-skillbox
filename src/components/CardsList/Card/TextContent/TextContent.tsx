@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './textContent.scss';
+import styles from './textContent.css';
 
 export function TextContent(): JSX.Element {
   return (

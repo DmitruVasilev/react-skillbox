@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './preview.scss';
+import styles from './preview.css';
 
 export function Preview(): JSX.Element {
   return (

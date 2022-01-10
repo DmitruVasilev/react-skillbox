@@ -4,7 +4,7 @@ import { Header } from './components/Header';
 import { Content } from './components/Content';
 import { CardsList } from './components/CardsList';
 
-import './styles/main.global.scss';
+import './styles/main.global.css';
 
 export function App(): JSX.Element{
   return (

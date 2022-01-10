@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowIcon, CommentIcon, SaveIcon, ShareIcon } from '../../../../icons';
-import styles from './controls.scss';
+import styles from './controls.css';
 
 export function Controls(): JSX.Element {
   return (

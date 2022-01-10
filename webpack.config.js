@@ -7,7 +7,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const NODE_ENV = process.env.NODE_ENV;
 const IS_DEV = NODE_ENV === 'development';
 const IS_PROD = !IS_DEV;
-const GLOBAL_CSS_REGEXP = '/.global.scss/;';
+const GLOBAL_CSS_REGEXP = '/.global.css/;';
 
 function setupDevTool() {
   if (IS_DEV) return 'eval';
@@ -31,7 +31,7 @@ module.exports = {
         use: ['ts-loader']
       },
       {
-        test: /\.scss$/,
+        test: /\.css$/,
         use: [
           'style-loader',
           {
@@ -46,9 +46,6 @@ module.exports = {
           },
           {
             loader: 'postcss-loader',
-          },
-          {
-            loader: 'sass-loader',
           }],
         exclude: GLOBAL_CSS_REGEXP,
       },

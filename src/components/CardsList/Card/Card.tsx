@@ -4,7 +4,7 @@ import { Preview } from './Preview';
 import { Menu } from './Menu';
 import { Controls } from './Controls';
 
-import styles from './card.scss';
+import styles from './card.css';
 
 export function Card(): JSX.Element{
   return (
